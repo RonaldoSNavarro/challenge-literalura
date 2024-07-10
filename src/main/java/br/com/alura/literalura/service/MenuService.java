@@ -77,8 +77,9 @@ public class MenuService implements CommandLineRunner {
         String title = scanner.nextLine();
         Optional<Book> bookOpt = gutendexClient.searchBookByTitle(title);
         if (bookOpt.isPresent()) {
-            bookRepository.save(bookOpt.get());
-            System.out.println("Livro salvo com sucesso!");
+            Book book = bookOpt.get();
+            bookRepository.save(book);
+            System.out.println("Livro salvo com sucesso: " + book.getTitle() + " - " + book.getAuthor());
         } else {
             System.out.println("Livro não encontrado.");
         }

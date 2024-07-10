@@ -12,7 +12,7 @@
 	<artifactId>literalura</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>LiteraLura</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Challenge LiterAlura</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -30,9 +30,20 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
 		</dependency>
 
 		<dependency>
